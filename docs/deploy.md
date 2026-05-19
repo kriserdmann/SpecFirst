@@ -1,0 +1,32 @@
+# Deploy
+
+## Por que este arquivo existe
+
+Este documento detalha publicacao em ambientes reais. Ele pode complementar `docs/operations.md` quando deploy exigir passos especificos.
+
+## Ambientes
+
+- Local: `[descricao]`
+- Staging: `[descricao]`
+- Producao: `[descricao]`
+
+## Processo de Deploy
+
+1. `[passo]`
+2. `[passo]`
+3. `[passo]`
+
+## Variaveis de Producao
+
+| Variavel | Descricao |
+| --- | --- |
+| `[VAR]` | `[descricao]` |
+
+## Rollback
+
+Explique como voltar para a versao anterior.
+
+## Verificacao Pos-Deploy
+
+- `[check]`
+
