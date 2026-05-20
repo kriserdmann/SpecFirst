@@ -32,6 +32,7 @@ Regras do SpecFirst:
 2. Os arquivos devem permanecer genericos o bastante para serem copiados para novos projetos.
 3. Toda nova rota de documentacao deve ser refletida em `README.md`, `AGENTS.md` e `docs/README.md`.
 4. A IA e responsavel pelo progresso: nenhuma tarefa e considerada concluida sem atualizar o status correspondente em `docs/issues.md`, o checklist ou fase atual em `docs/implementation-plan.md` e o rastro tecnico em `docs/deployment-log.md`.
+5. Arquivos especificos de ferramenta, como `CLAUDE.md`, `.cursorrules` ou similares, sao adaptadores operacionais. Eles nao devem duplicar nem contradizer `AGENTS.md`.
 
 ## Stack do Projeto
 
@@ -48,6 +49,7 @@ Explique as tecnologias principais e suas versoes quando isso afetar decisoes.
 
 - `/README.md` -> guia de uso do SpecFirst.
 - `/AGENTS.md` -> contrato universal copiavel para novos projetos.
+- `/CLAUDE.md` -> adaptador operacional para Claude Code.
 - `/docs` -> documentacao canonica copiavel.
 
 ## Fluxo de Trabalho Esperado
@@ -102,6 +104,7 @@ Ler sempre antes de implementacoes relevantes:
 | `docs/workflows.md` | Ao alterar jornada operacional ou fluxo de usuario. |
 | `docs/operations.md` | Ao mexer em ambiente, deploy, backups ou operacao. |
 | `docs/templates.md` | Ao criar padroes reutilizaveis de UI, codigo ou documento. |
+| `docs/tooling-adapters.md` | Ao criar ou revisar adaptadores para Claude Code, Cursor, Windsurf ou outras ferramentas. |
 | `docs/decision-log.md` | Quando houver decisao arquitetural nova ou conflito entre regras. |
 | `docs/deployment-log.md` | Ao registrar o que foi tecnicamente entregue, arquivos alterados, checks e riscos. |
 | `docs/implementation-plan.md` | Ao planejar fases, sprints ou sequencia de entrega. |

@@ -67,6 +67,12 @@ SpecFirst torna explícito que a IA é responsável por manter o progresso docum
 
 SpecFirst não depende de uma plataforma específica. Ele pode ser usado com qualquer editor, agente de IA, ferramenta de automação, issue tracker ou stack técnica, porque o contrato vive em Markdown versionado.
 
+### Compatibilidade com múltiplos agentes
+
+O contrato universal fica em `AGENTS.md`, mas ferramentas diferentes podem ter portas de entrada próprias. Por isso, o SpecFirst permite adaptadores como `CLAUDE.md`, `.cursorrules` ou arquivos equivalentes.
+
+Esses adaptadores não devem duplicar as regras do projeto. Eles apenas apontam a ferramenta para `AGENTS.md` e `docs/*`, mantendo uma única fonte de verdade.
+
 ## Quando Usar
 
 Use SpecFirst quando você quer iniciar ou reorganizar um projeto que precisa de:
@@ -112,6 +118,7 @@ Isso é superior ao "vibe coding" porque:
 5. Adicione documentos específicos apenas quando eles criarem clareza operacional.
 6. Mantenha `AGENTS.md` curto o bastante para ser lido sempre.
 7. Use `docs/*` para detalhes estáveis de produto, arquitetura e processo.
+8. Se usar Claude Code, Cursor, Windsurf ou outra ferramenta com arquivo próprio de instruções, crie um adaptador curto seguindo `docs/tooling-adapters.md`.
 
 ## Prompt Mestre de Kickoff
 
@@ -161,6 +168,7 @@ Depois, preencha os documentos sob demanda:
 - `deployment-log.md` para entregas técnicas realizadas.
 - `implementation-plan.md`, `issues.md` e `backlog.md` para execução.
 - `implementation-governance.md` para travas de escopo e avanço de fase.
+- `tooling-adapters.md` para compatibilidade com Claude Code, Cursor, Windsurf e outros agentes.
 - `templates.md` para recipes e padrões reutilizáveis.
 
 ## Ciclo de Vida de uma Tarefa com IA
@@ -198,6 +206,7 @@ Use `docs/deployment-log.md` para registrar o que foi tecnicamente entregue:
 .
 |-- README.md
 |-- AGENTS.md
+|-- CLAUDE.md
 `-- docs
     |-- README.md
     |-- project-overview.md
@@ -229,8 +238,19 @@ Ao usar o SpecFirst em outro projeto, a estrutura completa pode ficar assim:
     |-- implementation-governance.md
     |-- implementation-plan.md
     |-- issues.md
+    |-- tooling-adapters.md
     `-- templates.md
 ```
+
+## Adaptadores de Ferramenta
+
+SpecFirst é agent-agnostic. Ele funciona com Codex, Claude Code, Cursor, Windsurf e outras ferramentas porque separa contrato de adaptador.
+
+- `AGENTS.md` é o contrato universal.
+- `docs/*` é a documentação canônica.
+- `CLAUDE.md`, `.cursorrules` e similares são adaptadores operacionais.
+
+Um adaptador deve ser curto e dizer para a ferramenta ler `AGENTS.md` e os docs nucleares. Ele não deve copiar todas as regras, porque isso cria divergência com o tempo.
 
 ## Princípio do Framework
 

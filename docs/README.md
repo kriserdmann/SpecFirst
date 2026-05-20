@@ -20,6 +20,7 @@ Este indice organiza a documentacao canonica do SpecFirst. A raiz do repositorio
 - `implementation-plan.md` -> fases, checklists e criterios globais de aceite.
 - `issues.md` -> trabalho planejado e estado vivo de cada issue.
 - `deployment-log.md` -> historico tecnico das entregas realizadas.
+- `tooling-adapters.md` -> como conectar SpecFirst a Claude Code, Cursor, Windsurf e outros agentes sem duplicar regras.
 
 ## Fronteira entre Historicos
 

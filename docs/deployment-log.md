@@ -37,6 +37,15 @@ Uma entrega pode aparecer no Deployment Log sem gerar decisao arquitetural. Uma 
 
 ## Entradas
 
+## [2026-05-20] - Entrega: ISSUE-001 (Adaptadores de ferramenta)
+
+- **Fase:** Fase 0 - Fundacao documental
+- **O que foi feito:** Adicionada compatibilidade explicita com Claude Code e outras ferramentas por meio de adaptadores operacionais. Criado `CLAUDE.md`, documentado o padrao em `docs/tooling-adapters.md` e atualizado README, AGENTS e indice de docs.
+- **Arquivos modificados:** `CLAUDE.md`, `README.md`, `AGENTS.md`, `docs/README.md`, `docs/tooling-adapters.md`, `docs/deployment-log.md`
+- **Resultados dos testes:** Revisao documental por leitura e busca textual. Nao ha suite automatizada neste repositorio documental.
+- **Docs atualizados:** `README.md`, `AGENTS.md`, `docs/README.md`, `docs/tooling-adapters.md`, `docs/deployment-log.md`
+- **Riscos/Debito tecnico:** Outros adaptadores, como `.cursorrules`, foram documentados como receita mas nao criados para evitar arquivos especificos de ferramenta sem necessidade confirmada.
+
 ## [2026-05-20] - Entrega: ISSUE-001 (Fluxo Spec-First com IA)
 
 - **Fase:** Fase 0 - Fundacao documental
