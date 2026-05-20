@@ -58,6 +58,7 @@ Criar contrato de trabalho e documentacao canonica inicial.
 - `docs/decision-log.md` contem decisoes iniciais.
 - `docs/ai-workflow.md` define sincronia obrigatoria entre issue, plano e log tecnico.
 - `docs/deployment-log.md` define o rastro tecnico das entregas.
+- `README.md` explica o fluxo Spec-First de adaptar documentacao antes de gerar codigo.
 
 ### Docs relevantes
 
@@ -68,4 +69,5 @@ Criar contrato de trabalho e documentacao canonica inicial.
 
 ### Estado atual
 
+- **2026-05-20 (IA):** [CONCLUIDA] Incluido o fluxo Spec-First com IA no README e em `docs/ai-workflow.md`, reforcando que a IA deve adaptar a documentacao ao escopo do projeto antes de criar codigo.
 - **2026-05-20 (IA):** [CONCLUIDA] Fundacao documental ampliada com governanca de progresso, travamento de escopo, diferenca entre Decision Log e Deployment Log, Prompt Mestre de kickoff e rastro tecnico em `docs/deployment-log.md`.

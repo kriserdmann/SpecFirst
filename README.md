@@ -80,6 +80,29 @@ Use SpecFirst quando você quer iniciar ou reorganizar um projeto que precisa de
 
 Ele funciona bem para produtos, apps internos, sites, bibliotecas, APIs, automações, projetos client-based e experimentos que podem evoluir para produto.
 
+## Fluxo Spec-First com IA
+
+A ideia central do SpecFirst é usar a IA primeiro para estruturar o projeto, não para sair programando.
+
+Em vez de começar com um pedido como "crie um app de tarefas", o fluxo recomendado é:
+
+1. **Start técnico:** crie um repositório vazio e copie `AGENTS.md` e `docs`.
+2. **Contextualização:** descreva a ideia do produto para a IA e peça para ela ler `AGENTS.md`.
+3. **Adaptação do SpecFirst:** peça para a IA ajustar `docs/project-overview.md`, `docs/architecture.md`, `docs/data-model.md`, `docs/workflows.md`, `docs/implementation-plan.md` e `docs/issues.md` para o projeto real.
+4. **Sem código ainda:** a IA deve mapear escopo, entidades, regras, riscos, fases e critérios de aceite antes de criar arquivos de implementação.
+5. **Revisão de intenção:** você revisa os Markdown gerados. Se a IA extrapolou o escopo, entendeu uma entidade errado ou pulou uma regra importante, corrija no texto.
+6. **Green light:** só depois da documentação aprovada, peça para a IA implementar a primeira fase seguindo `AGENTS.md`, `docs/implementation-plan.md` e `docs/testing.md`.
+
+Esse fluxo transforma a IA de geradora de código em parceira de produto e arquitetura. Ela ajuda a criar a própria forma onde o código será injetado depois.
+
+Isso é superior ao "vibe coding" porque:
+
+- reduz retrabalho ao corrigir escopo em Markdown antes de reescrever código;
+- preserva contexto quando o chat estoura, a sessão muda ou o projeto pausa por semanas;
+- cria guarda-corpos para a IA se auto-policiar durante a implementação;
+- deixa claro o que está dentro e fora do escopo antes da primeira linha de código;
+- torna o onboarding de outra IA ou pessoa muito mais rápido.
+
 ## Como Usar
 
 1. Copie `AGENTS.md` para a raiz do novo projeto.
@@ -101,9 +124,11 @@ Antes de implementar qualquer coisa:
 
 1. Leia `AGENTS.md`.
 2. Leia os documentos nucleares em `docs/README.md`, `docs/project-overview.md`, `docs/architecture.md`, `docs/ai-workflow.md`, `docs/coding-standards.md` e `docs/testing.md`.
-3. Identifique a issue ou fase ativa em `docs/issues.md` e `docs/implementation-plan.md`.
-4. Confirme objetivo, critério de aceite, riscos, arquivos prováveis e checks necessários.
-5. Só implemente depois de entender o contrato do projeto.
+3. A partir do escopo descrito pelo humano, adapte os documentos `docs/*` para este projeto específico.
+4. Preencha ou revise `docs/project-overview.md`, `docs/architecture.md`, `docs/data-model.md`, `docs/workflows.md`, `docs/implementation-plan.md` e `docs/issues.md`.
+5. Não crie código ainda.
+6. Confirme objetivo, critério de aceite, riscos, arquivos prováveis, checks necessários e pontos que precisam de decisão humana.
+7. Aguarde aprovação humana do escopo documentado antes de implementar.
 
 Ao concluir:
 

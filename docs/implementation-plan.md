@@ -28,6 +28,7 @@ Implementar `[NOME_DO_PROJETO]` para `[resultado esperado]`.
 - [x] Definir sincronia obrigatoria entre plano, issues e log tecnico.
 - [x] Criar `docs/deployment-log.md`.
 - [x] Documentar travamento de escopo em `docs/implementation-governance.md`.
+- [x] Documentar o fluxo Spec-First de adaptar docs ao projeto antes de gerar codigo.
 
 ### Fase 1 - Scaffold tecnico
 

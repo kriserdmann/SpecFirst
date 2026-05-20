@@ -37,6 +37,15 @@ Uma entrega pode aparecer no Deployment Log sem gerar decisao arquitetural. Uma 
 
 ## Entradas
 
+## [2026-05-20] - Entrega: ISSUE-001 (Fluxo Spec-First com IA)
+
+- **Fase:** Fase 0 - Fundacao documental
+- **O que foi feito:** Adicionado ao README o conceito de usar a IA para adaptar o SpecFirst ao escopo do projeto antes de gerar codigo. Reforcado em `docs/ai-workflow.md` que a inicializacao do projeto exige documentacao especifica aprovada antes da implementacao.
+- **Arquivos modificados:** `README.md`, `docs/ai-workflow.md`, `docs/deployment-log.md`
+- **Resultados dos testes:** Revisao documental por leitura e busca textual. Nao ha suite automatizada neste repositorio documental.
+- **Docs atualizados:** `README.md`, `docs/ai-workflow.md`, `docs/deployment-log.md`
+- **Riscos/Debito tecnico:** Nenhum conhecido.
+
 ## [2026-05-20] - Entrega: ISSUE-001 (Posicionamento do SpecFirst no README)
 
 - **Fase:** Fase 0 - Fundacao documental
