@@ -31,6 +31,7 @@ Regras do SpecFirst:
 1. A raiz do repositorio e o template replicavel.
 2. Os arquivos devem permanecer genericos o bastante para serem copiados para novos projetos.
 3. Toda nova rota de documentacao deve ser refletida em `README.md`, `AGENTS.md` e `docs/README.md`.
+4. A IA e responsavel pelo progresso: nenhuma tarefa e considerada concluida sem atualizar o status correspondente em `docs/issues.md`, o checklist ou fase atual em `docs/implementation-plan.md` e o rastro tecnico em `docs/deployment-log.md`.
 
 ## Stack do Projeto
 
@@ -59,7 +60,8 @@ Todo trabalho relevante deve seguir este ciclo:
 4. Implementar o menor incremento seguro.
 5. Refatorar quando houver duplicacao real ou complexidade desnecessaria.
 6. Validar com os checks definidos em `docs/testing.md`.
-7. Atualizar docs quando arquitetura, modelo ou fluxo mudar.
+7. Sincronizar progresso em `docs/issues.md`, `docs/implementation-plan.md` e `docs/deployment-log.md`.
+8. Atualizar docs quando arquitetura, modelo ou fluxo mudar.
 
 ## Definition of Done
 
@@ -71,6 +73,9 @@ Uma tarefa so esta pronta quando:
 - entradas externas estao validadas;
 - nao ha duplicacao evidente;
 - a arquitetura foi respeitada;
+- `docs/issues.md` registra o status e o historico da issue;
+- `docs/implementation-plan.md` reflete o avanco da fase ou checklist;
+- `docs/deployment-log.md` registra o rastro tecnico da entrega;
 - documentacao foi atualizada quando necessario;
 - impossibilidades ou riscos residuais foram registrados.
 
@@ -98,7 +103,9 @@ Ler sempre antes de implementacoes relevantes:
 | `docs/operations.md` | Ao mexer em ambiente, deploy, backups ou operacao. |
 | `docs/templates.md` | Ao criar padroes reutilizaveis de UI, codigo ou documento. |
 | `docs/decision-log.md` | Quando houver decisao arquitetural nova ou conflito entre regras. |
+| `docs/deployment-log.md` | Ao registrar o que foi tecnicamente entregue, arquivos alterados, checks e riscos. |
 | `docs/implementation-plan.md` | Ao planejar fases, sprints ou sequencia de entrega. |
+| `docs/implementation-governance.md` | Ao controlar escopo, travas de fase e autorizacoes humanas. |
 | `docs/issues.md` | Ao executar trabalho planejado por issue. |
 
 ## Hierarquia de Contexto
@@ -126,4 +133,5 @@ Sempre:
 - manter entregas pequenas;
 - preferir contratos claros;
 - validar antes de concluir;
+- sincronizar issue, plano e log tecnico antes de encerrar uma tarefa;
 - atualizar docs quando a decisao mudar.

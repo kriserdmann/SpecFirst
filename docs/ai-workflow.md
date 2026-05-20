@@ -23,7 +23,9 @@ Este documento define como agentes de IA devem trabalhar no projeto. Ele reduz e
    - Implementar incrementos curtos, revisaveis e reversiveis.
 6. **Validacao**
    - Rodar checks aplicaveis.
-7. **Documentacao viva**
+7. **Sincronia de progresso**
+   - Atualizar issue, plano e log tecnico antes de considerar a tarefa pronta.
+8. **Documentacao viva**
    - Atualizar docs quando arquitetura, modelo ou fluxo mudar.
 
 ## Kickoff de Tarefa
@@ -31,6 +33,7 @@ Este documento define como agentes de IA devem trabalhar no projeto. Ele reduz e
 Antes de implementar, a IA deve registrar:
 
 - objetivo;
+- issue ou fase relacionada;
 - docs lidos;
 - criterio de aceite;
 - impacto em dados, seguranca, UI e testes;
@@ -38,11 +41,34 @@ Antes de implementar, a IA deve registrar:
 
 ## Fechamento de Tarefa
 
-Ao concluir, a IA deve relatar:
+Antes de encerrar a tarefa, commitar ou responder como concluida, a IA deve persistir o progresso no repositorio:
+
+1. Atualizar `docs/issues.md`.
+   - Mudar o status da issue quando aplicavel: `Planejada`, `Em andamento`, `Concluida` ou `Bloqueada`.
+   - Registrar uma nota datada em `### Estado atual`.
+2. Atualizar `docs/implementation-plan.md`.
+   - Marcar checklists concluidos.
+   - Atualizar a fase atual quando a entrega destravar a proxima etapa.
+   - Nao pular fases com pendencias abertas sem decisao humana.
+3. Atualizar `docs/deployment-log.md`.
+   - Registrar o que foi feito, arquivos modificados, checks executados e riscos tecnicos.
+4. Atualizar `docs/decision-log.md` apenas quando houver decisao de arquitetura, produto, modelo, seguranca ou operacao.
+
+Depois de persistir o progresso, a IA deve relatar no chat:
 
 - arquivos alterados;
 - comportamento entregue;
 - testes ou checks executados;
+- status atualizado da issue;
+- fase ou checklist atualizado no plano;
+- entrada criada no log tecnico;
 - pendencias ou riscos residuais;
 - docs atualizados.
 
+## Diferenca entre Logs
+
+- `docs/decision-log.md` registra decisoes duradouras e seus motivos.
+- `docs/deployment-log.md` registra entregas tecnicas realizadas.
+- `docs/issues.md` registra o estado vivo de cada trabalho planejado.
+
+Nao misture decisao arquitetural com historico operacional. Se uma entrega tecnica tambem gerar uma decisao duradoura, registre nos dois lugares com propositos diferentes.

@@ -6,6 +6,8 @@ Este documento organiza a sequencia de implementacao. Ele deve transformar visao
 
 Use para planejar sprints, marcos, dependencias e criterios globais de aceite.
 
+Este documento deve refletir o estado real da implementacao. A IA deve atualiza-lo sempre que concluir uma tarefa que avance fase, checklist ou dependencia critica.
+
 ## Objetivo
 
 Implementar `[NOME_DO_PROJETO]` para `[resultado esperado]`.
@@ -18,25 +20,46 @@ Implementar `[NOME_DO_PROJETO]` para `[resultado esperado]`.
 
 ### Fase 0 - Fundacao documental
 
-- Criar ou revisar `AGENTS.md`.
-- Criar docs canonicos.
-- Registrar decisoes iniciais.
+**Status:** Concluida
+
+- [x] Criar ou revisar `AGENTS.md`.
+- [x] Criar docs canonicos.
+- [x] Registrar decisoes iniciais.
+- [x] Definir sincronia obrigatoria entre plano, issues e log tecnico.
+- [x] Criar `docs/deployment-log.md`.
+- [x] Documentar travamento de escopo em `docs/implementation-governance.md`.
 
 ### Fase 1 - Scaffold tecnico
 
-- `[tarefa]`
+**Status:** Planejada | Em andamento | Concluida | Bloqueada
+
+- [ ] `[tarefa]`
 
 ### Fase 2 - Modelo ou dominio principal
 
-- `[tarefa]`
+**Status:** Planejada | Em andamento | Concluida | Bloqueada
+
+- [ ] `[tarefa]`
 
 ### Fase 3 - Interface, API ou integracao publica
 
-- `[tarefa]`
+**Status:** Planejada | Em andamento | Concluida | Bloqueada
+
+- [ ] `[tarefa]`
 
 ### Fase 4 - Hardening e deploy
 
-- `[tarefa]`
+**Status:** Planejada | Em andamento | Concluida | Bloqueada
+
+- [ ] `[tarefa]`
+
+## Regras de Avanco
+
+- Nao marcar fase como `Concluida` se houver checklist obrigatorio aberto.
+- Nao iniciar fase posterior quando a fase atual tiver bloqueios sem decisao registrada.
+- Ao concluir item de fase, atualizar a issue relacionada em `docs/issues.md`.
+- Ao entregar mudanca tecnica, registrar entrada em `docs/deployment-log.md`.
+- Ao mudar a ordem das fases ou criterio de aceite, registrar decisao em `docs/decision-log.md`.
 
 ## Dependencias Criticas
 

@@ -44,8 +44,8 @@ Nao deve:
 
 ## Dependencias Permitidas
 
-- `README.md` pode apontar para `template/*` e `docs/*`.
-- `AGENTS.md` pode apontar para `docs/*` e definir regras de manutencao do template.
+- `README.md` pode apontar para `AGENTS.md` e `docs/*`.
+- `AGENTS.md` pode apontar para `docs/*` e definir regras de manutencao do framework.
 - `docs/*` pode explicar o funcionamento do projeto.
 
 ## Dependencias Proibidas

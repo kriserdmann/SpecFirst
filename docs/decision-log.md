@@ -4,6 +4,8 @@
 
 Este documento registra decisoes que mudam arquitetura, modelo, fluxo, escopo ou operacao. Ele evita que o motivo de uma escolha desapareca com o tempo.
 
+Nao use este arquivo como historico de entregas tecnicas. Para isso, use `docs/deployment-log.md`.
+
 ## Como Usar
 
 - Identificador incremental: `0001`, `0002`, `0003`.
@@ -52,3 +54,22 @@ Adotar `AGENTS.md` como contrato universal e `docs/*` como fonte canonica tecnic
 - Menos dependencia de uma ferramenta especifica.
 - Maior consistencia entre entregas.
 - Necessidade de manter documentacao viva.
+
+## 0002 - Sincronizar plano, issues e log tecnico
+
+- **Data:** 2026-05-20
+- **Estado:** Aceita
+
+### Contexto
+
+Projetos tocados por IA perdem governanca quando a implementacao avanca mas `docs/issues.md`, `docs/implementation-plan.md` e o historico tecnico ficam desatualizados.
+
+### Decisao
+
+Tornar obrigatoria a sincronizacao entre issue, plano de implementacao e `docs/deployment-log.md` antes de qualquer tarefa ser considerada concluida.
+
+### Consequencias
+
+- A IA passa a ser responsavel por registrar o proprio avanco.
+- O fechamento de tarefa deixa de ser apenas relato no chat e passa a persistir historico no repositorio.
+- `docs/decision-log.md` fica reservado para decisoes duradouras, enquanto `docs/deployment-log.md` registra entregas tecnicas.

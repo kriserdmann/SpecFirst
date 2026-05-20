@@ -6,6 +6,20 @@ A proposta é simples: antes de escrever muito código, o projeto deve ter uma f
 
 O próprio repositório do SpecFirst funciona como template. Para usar em outro projeto, copie `AGENTS.md` e a pasta `docs`.
 
+## O que é o SpecFirst
+
+SpecFirst pode ser entendido em três camadas complementares:
+
+- **Framework documental:** define um modo de trabalhar, com regras, ciclo de vida, governança, logs, fluxo de IA, Definition of Done e controle de escopo.
+- **Template Markdown:** entrega uma estrutura copiável baseada em `AGENTS.md` e `docs/*`, pronta para iniciar novos projetos.
+- **Kit de governança para IA:** reúne documentos operacionais para manter plano, execução, decisões e histórico técnico sincronizados.
+
+Por isso, a melhor definição curta é:
+
+> SpecFirst é um framework documental em Markdown, distribuído como template, para governar projetos tocados por humanos e agentes de IA.
+
+Ele não é apenas um conjunto de arquivos. O valor está no conceito: começar pela especificação, manter decisões rastreáveis e fazer a IA registrar o próprio avanço antes de encerrar uma entrega.
+
 ## Propósito
 
 Muitos projetos começam com decisões espalhadas em conversas, prompts, issues, commits e memória das pessoas. Quando entram agentes de IA, automações ou novos colaboradores, esse contexto precisa ser reconstruído a cada tarefa.
@@ -19,6 +33,8 @@ SpecFirst ajuda a responder:
 - qual arquitetura deve ser seguida;
 - como a IA deve trabalhar no projeto;
 - quais decisões já foram tomadas;
+- qual issue e fase estão em andamento;
+- o que foi tecnicamente entregue;
 - como validar que uma entrega está pronta.
 
 ## Benefícios
@@ -42,6 +58,10 @@ Arquivos como `implementation-plan.md`, `issues.md`, `backlog.md` e `implementat
 ### Validação mais objetiva
 
 `testing.md`, `coding-standards.md` e a Definition of Done do `AGENTS.md` deixam claro quais checks devem ser executados e o que significa uma tarefa estar pronta.
+
+### Sincronia entre plano e execução
+
+SpecFirst torna explícito que a IA é responsável por manter o progresso documentado. Uma tarefa não termina apenas porque o código foi escrito: a issue precisa ser atualizada, o plano precisa refletir o avanço e o rastro técnico precisa ser registrado.
 
 ### Independência de ferramenta
 
@@ -70,6 +90,30 @@ Ele funciona bem para produtos, apps internos, sites, bibliotecas, APIs, automa�
 6. Mantenha `AGENTS.md` curto o bastante para ser lido sempre.
 7. Use `docs/*` para detalhes estáveis de produto, arquitetura e processo.
 
+## Prompt Mestre de Kickoff
+
+Use este prompt ao iniciar um novo projeto com uma IA:
+
+```text
+Você é um agente trabalhando sob o framework SpecFirst.
+
+Antes de implementar qualquer coisa:
+
+1. Leia `AGENTS.md`.
+2. Leia os documentos nucleares em `docs/README.md`, `docs/project-overview.md`, `docs/architecture.md`, `docs/ai-workflow.md`, `docs/coding-standards.md` e `docs/testing.md`.
+3. Identifique a issue ou fase ativa em `docs/issues.md` e `docs/implementation-plan.md`.
+4. Confirme objetivo, critério de aceite, riscos, arquivos prováveis e checks necessários.
+5. Só implemente depois de entender o contrato do projeto.
+
+Ao concluir:
+
+1. Atualize o status e o histórico da issue em `docs/issues.md`.
+2. Atualize o checklist ou fase em `docs/implementation-plan.md`.
+3. Registre a entrega técnica em `docs/deployment-log.md`.
+4. Atualize `docs/decision-log.md` apenas se houver decisão duradoura de arquitetura, produto, dados, segurança ou operação.
+5. Resuma no chat os arquivos alterados, checks executados, docs atualizados e riscos residuais.
+```
+
 ## Como Preencher
 
 Comece pelo núcleo mínimo:
@@ -89,8 +133,39 @@ Depois, preencha os documentos sob demanda:
 - `workflows.md` para jornadas operacionais ou fluxos de usuário.
 - `operations.md` e `deploy.md` para ambiente, publicação e suporte.
 - `decision-log.md` para decisões duradouras.
+- `deployment-log.md` para entregas técnicas realizadas.
 - `implementation-plan.md`, `issues.md` e `backlog.md` para execução.
+- `implementation-governance.md` para travas de escopo e avanço de fase.
 - `templates.md` para recipes e padrões reutilizáveis.
+
+## Ciclo de Vida de uma Tarefa com IA
+
+No SpecFirst, a IA deve manter sincronia entre plano e execução:
+
+1. **Antes de implementar:** ler o contrato, identificar issue/fase, confirmar critério de aceite e riscos.
+2. **Durante a implementação:** fazer o menor incremento seguro e validar com os checks definidos.
+3. **Antes de encerrar:** atualizar `docs/issues.md`, `docs/implementation-plan.md` e `docs/deployment-log.md`.
+4. **Quando houver decisão duradoura:** registrar também em `docs/decision-log.md`.
+
+Essa regra evita que a documentação morra depois dos primeiros commits.
+
+## Decision Log vs Deployment Log
+
+Use `docs/decision-log.md` para registrar o motivo de decisões duradouras:
+
+- escolha de stack;
+- mudança arquitetural;
+- alteração de modelo de dados;
+- decisão de segurança;
+- mudança de fluxo operacional.
+
+Use `docs/deployment-log.md` para registrar o que foi tecnicamente entregue:
+
+- arquivos modificados;
+- issue relacionada;
+- testes e checks executados;
+- riscos e débitos técnicos;
+- documentação atualizada.
 
 ## Estrutura Recomendada
 
@@ -125,6 +200,8 @@ Ao usar o SpecFirst em outro projeto, a estrutura completa pode ficar assim:
     |-- workflows.md
     |-- operations.md
     |-- decision-log.md
+    |-- deployment-log.md
+    |-- implementation-governance.md
     |-- implementation-plan.md
     |-- issues.md
     `-- templates.md
@@ -150,3 +227,5 @@ SpecFirst não significa documentar tudo antes de agir. Significa documentar pri
 - fluxo de trabalho.
 
 O resultado esperado é um projeto que agentes e pessoas conseguem entender rapidamente, modificar com mais segurança e evoluir sem depender de contexto escondido.
+
+A IA não é apenas executora de código. Dentro do SpecFirst, ela também é responsável por manter o histórico de engenharia sincronizado com o que acabou de entregar.
