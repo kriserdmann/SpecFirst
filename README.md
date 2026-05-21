@@ -161,6 +161,7 @@ Depois, preencha os documentos sob demanda:
 
 - `domains.md` para fronteiras de responsabilidade.
 - `data-model.md` para entidades, schemas, persistência e contratos.
+- `design-guidelines.md` para direção visual, tokens, componentes, layout e experiência frontend.
 - `security.md` para auth, permissões, secrets e dados sensíveis.
 - `workflows.md` para jornadas operacionais ou fluxos de usuário.
 - `operations.md` e `deploy.md` para ambiente, publicação e suporte.
@@ -230,6 +231,7 @@ Ao usar o SpecFirst em outro projeto, a estrutura completa pode ficar assim:
     |-- testing.md
     |-- domains.md
     |-- data-model.md
+    |-- design-guidelines.md
     |-- security.md
     |-- workflows.md
     |-- operations.md

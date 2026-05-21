@@ -100,6 +100,7 @@ Ler sempre antes de implementacoes relevantes:
 | --- | --- |
 | `docs/domains.md` | Ao alterar fronteiras de responsabilidade. |
 | `docs/data-model.md` | Ao alterar dados, schemas, entidades ou persistencia. |
+| `docs/design-guidelines.md` | Ao criar ou alterar UI, estilo visual, componentes, layout, marca ou experiencia frontend. |
 | `docs/security.md` | Ao tocar auth, permissoes, uploads, secrets ou dados sensiveis. |
 | `docs/workflows.md` | Ao alterar jornada operacional ou fluxo de usuario. |
 | `docs/operations.md` | Ao mexer em ambiente, deploy, backups ou operacao. |

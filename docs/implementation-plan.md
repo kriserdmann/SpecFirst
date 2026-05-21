@@ -30,6 +30,7 @@ Implementar `[NOME_DO_PROJETO]` para `[resultado esperado]`.
 - [x] Documentar travamento de escopo em `docs/implementation-governance.md`.
 - [x] Documentar o fluxo Spec-First de adaptar docs ao projeto antes de gerar codigo.
 - [x] Documentar adaptadores de ferramenta e criar `CLAUDE.md`.
+- [x] Criar diretrizes de design para UI e frontend.
 
 ### Fase 1 - Scaffold tecnico
 

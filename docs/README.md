@@ -17,6 +17,7 @@ Este indice organiza a documentacao canonica do SpecFirst. A raiz do repositorio
 - `ai-workflow.md` -> como agentes devem trabalhar no projeto.
 - `coding-standards.md` -> padroes para manter a documentacao consistente.
 - `testing.md` -> validacoes esperadas para mudancas no framework.
+- `design-guidelines.md` -> direcao visual, tokens, componentes, layout e regras para UI.
 - `implementation-plan.md` -> fases, checklists e criterios globais de aceite.
 - `issues.md` -> trabalho planejado e estado vivo de cada issue.
 - `deployment-log.md` -> historico tecnico das entregas realizadas.

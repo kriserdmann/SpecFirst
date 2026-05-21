@@ -49,6 +49,7 @@ Documentos normalmente ajustados nessa etapa:
 - `docs/architecture.md`;
 - `docs/domains.md`;
 - `docs/data-model.md`;
+- `docs/design-guidelines.md`, quando houver UI, marca, frontend ou experiencia visual;
 - `docs/security.md`, quando houver auth, permissoes, secrets ou dados sensiveis;
 - `docs/workflows.md`;
 - `docs/implementation-plan.md`;
@@ -66,6 +67,7 @@ Antes de implementar, a IA deve registrar:
 - docs lidos;
 - criterio de aceite;
 - impacto em dados, seguranca, UI e testes;
+- impacto em design, tokens, componentes e responsividade, quando houver UI;
 - riscos ou suposicoes.
 
 ## Fechamento de Tarefa

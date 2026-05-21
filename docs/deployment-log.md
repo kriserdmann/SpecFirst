@@ -37,6 +37,15 @@ Uma entrega pode aparecer no Deployment Log sem gerar decisao arquitetural. Uma 
 
 ## Entradas
 
+## [2026-05-20] - Entrega: ISSUE-001 (Diretrizes de design)
+
+- **Fase:** Fase 0 - Fundacao documental
+- **O que foi feito:** Criado `docs/design-guidelines.md` como documento canonico para direcao visual, tokens, layout, componentes, estados, acessibilidade e diretrizes de IA para UI. Referenciado em README, AGENTS, indice de docs e workflow de IA.
+- **Arquivos modificados:** `README.md`, `AGENTS.md`, `docs/README.md`, `docs/ai-workflow.md`, `docs/design-guidelines.md`, `docs/deployment-log.md`
+- **Resultados dos testes:** Revisao documental por leitura e busca textual. Nao ha suite automatizada neste repositorio documental.
+- **Docs atualizados:** `README.md`, `AGENTS.md`, `docs/README.md`, `docs/ai-workflow.md`, `docs/design-guidelines.md`, `docs/deployment-log.md`
+- **Riscos/Debito tecnico:** O documento e um template generico; projetos com marca existente devem preencher tokens e componentes reais antes de implementar UI.
+
 ## [2026-05-20] - Entrega: ISSUE-001 (Adaptadores de ferramenta)
 
 - **Fase:** Fase 0 - Fundacao documental
