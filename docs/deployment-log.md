@@ -6,6 +6,10 @@ Este documento registra o historico tecnico do que foi efetivamente entregue no 
 
 Use este arquivo para responder: "o que mudou de fato no projeto, quando, por qual issue e com quais validacoes?".
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise se o projeto usara log tecnico local; mantenha, ajuste ou solicite aprovacao humana para remover conforme a governanca desejada.
+
 ## Diferenca para Decision Log
 
 - `docs/decision-log.md` registra decisoes duradouras de arquitetura, produto, modelo, seguranca ou operacao.
@@ -36,6 +40,24 @@ Uma entrega pode aparecer no Deployment Log sem gerar decisao arquitetural. Uma 
 ```
 
 ## Entradas
+
+## [2026-05-24] - Entrega: ISSUE-001 (Governanca humano-navegador)
+
+- **Fase:** Fase 0 - Fundacao documental
+- **O que foi feito:** Reequilibrada a autonomia da IA para o modelo humano navegador e IA piloto. Adicionada exigencia de aprovacao humana para decisoes de escopo, arquitetura, seguranca, modelo de dados e remocao de documentos. Padronizada a secao `Natureza de Template` em `AGENTS.md`, `CLAUDE.md`, `README.md` e todos os arquivos em `docs/*`, explicando que cada arquivo deve ser revisado e ajustado ao escopo real do projeto.
+- **Arquivos modificados:** `AGENTS.md`, `CLAUDE.md`, `README.md`, `docs/*`
+- **Resultados dos testes:** Revisao documental por busca textual para confirmar `Natureza de Template` em todos os arquivos de `docs/*` e verificacao de referencias a aprovacao humana. Nao ha suite automatizada neste repositorio documental.
+- **Docs atualizados:** `AGENTS.md`, `CLAUDE.md`, `README.md`, `docs/*`
+- **Riscos/Debito tecnico:** Os documentos continuam majoritariamente em ASCII sem acentuacao; pode ser padronizado em revisao editorial futura.
+
+## [2026-05-22] - Entrega: ISSUE-001 (Adaptacao inicial completa)
+
+- **Fase:** Fase 0 - Fundacao documental
+- **O que foi feito:** Reforcado que o primeiro chat de escopo deve adaptar o framework inteiro ao projeto real, incluindo `AGENTS.md`, `README.md`, adaptadores e todos os arquivos em `docs/*`. Documentada a possibilidade de remover arquivos que nao se aplicam, com limpeza obrigatoria de referencias cruzadas.
+- **Arquivos modificados:** `README.md`, `AGENTS.md`, `docs/ai-workflow.md`, `docs/README.md`, `docs/implementation-governance.md`, `docs/deployment-log.md`
+- **Resultados dos testes:** Revisao documental por leitura e busca textual. Nao ha suite automatizada neste repositorio documental.
+- **Docs atualizados:** `README.md`, `AGENTS.md`, `docs/ai-workflow.md`, `docs/README.md`, `docs/implementation-governance.md`, `docs/deployment-log.md`
+- **Riscos/Debito tecnico:** Nenhum conhecido.
 
 ## [2026-05-20] - Entrega: ISSUE-001 (Diretrizes de design)
 

@@ -6,6 +6,10 @@ Este documento define a arquitetura autorizada do projeto. Ele deve guiar onde o
 
 Quando alguem perguntar "onde isso deve ficar?", a resposta deve estar aqui.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise e ajuste visao geral, camadas, dependencias permitidas, dependencias proibidas e decisoes base ao projeto real.
+
 ## Visao Geral
 
 `Contrato universal -> Documentacao canonica -> Projeto futuro`

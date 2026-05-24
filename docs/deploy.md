@@ -4,6 +4,10 @@
 
 Este documento detalha publicacao em ambientes reais. Ele pode complementar `docs/operations.md` quando deploy exigir passos especificos.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise se o projeto tera deploy; ajuste ambientes, processo, variaveis, rollback e verificacao pos-deploy, ou solicite aprovacao humana para remover.
+
 ## Ambientes
 
 - Local: `[descricao]`
@@ -29,4 +33,3 @@ Explique como voltar para a versao anterior.
 ## Verificacao Pos-Deploy
 
 - `[check]`
-

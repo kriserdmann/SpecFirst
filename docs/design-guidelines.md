@@ -8,6 +8,10 @@ Ele evita que a IA invente uma linguagem visual nova a cada tarefa. Use este arq
 
 Quando o projeto tiver UI, site, app, dashboard, landing page, design system, marca ou experiencia visual, este documento deve ser preenchido antes da implementacao relevante.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise se o projeto tera UI; ajuste overview, principios, tokens, layout, componentes, estados, acessibilidade e do's/don'ts, ou solicite aprovacao humana para remover.
+
 ## Como Usar
 
 1. Descreva a intencao visual do projeto em linguagem clara.

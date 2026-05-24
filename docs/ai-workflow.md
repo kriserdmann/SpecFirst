@@ -4,10 +4,16 @@
 
 Este documento define como agentes de IA devem trabalhar no projeto. Ele reduz entregas impulsivas e cria um fluxo previsivel de contexto, implementacao, validacao e documentacao.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise e ajuste principio, fluxo operacional, inicializacao, limites de autonomia, kickoff, fechamento e diferenca entre logs ao projeto real.
+
 ## Principio
 
-- Humano = navegador: define objetivo, prioridade e decisao.
-- IA = piloto: explora, implementa, valida e documenta.
+- Humano = navegador: define o que sera feito, por que sera feito, prioridade, contexto de negocio e decisoes de produto, arquitetura e escopo.
+- IA = piloto: define o como tecnico, escreve codigo, gera testes, lida com boilerplate, executa refatoracoes mecanicas e mantem documentacao sincronizada.
+
+A IA deve propor, explicar tradeoffs e pedir decisao quando houver mudanca relevante. Ela nao deve agir como dona do produto nem tomar decisoes de escopo sozinha.
 
 ## Fluxo Operacional
 
@@ -32,19 +38,26 @@ Este documento define como agentes de IA devem trabalhar no projeto. Ele reduz e
 
 ## Inicializacao de Projeto
 
-Quando o SpecFirst for copiado para um projeto novo, a primeira tarefa da IA nao e criar codigo. A primeira tarefa e transformar o template em documentacao especifica do projeto.
+Quando o SpecFirst for copiado para um projeto novo, a primeira tarefa da IA nao e criar codigo. A primeira tarefa e transformar o framework inteiro em documentacao especifica do projeto.
 
 A IA deve:
 
-1. ler `AGENTS.md` e `docs/README.md`;
+1. ler `AGENTS.md`, `README.md`, adaptadores de ferramenta e `docs/README.md`;
 2. receber do humano o escopo inicial do produto, app, API, site, biblioteca ou automacao;
-3. adaptar os documentos essenciais ao projeto real;
-4. preencher escopo, fora de escopo, dominios, dados, riscos, fases e criterios de aceite;
-5. registrar duvidas ou decisoes pendentes;
-6. aguardar validacao humana antes de iniciar implementacao.
+3. revisar todos os arquivos de `docs/*`, nao apenas os nucleares;
+4. propor ajustes em `AGENTS.md` ao projeto real, incluindo proposito, regras, stack, estrutura e Definition of Done;
+5. propor preenchimento de escopo, fora de escopo, dominios, dados, riscos, fases e criterios de aceite;
+6. identificar documentos que talvez nao se apliquem ao projeto e pedir aprovacao humana antes de remove-los;
+7. se a remocao for aprovada, limpar referencias para arquivos removidos em `README.md`, `AGENTS.md`, `docs/README.md` e documentos relacionados;
+8. registrar duvidas, suposicoes ou decisoes pendentes;
+9. aguardar validacao humana antes de iniciar implementacao.
 
-Documentos normalmente ajustados nessa etapa:
+Arquivos normalmente ajustados nessa etapa:
 
+- `AGENTS.md`;
+- `README.md`;
+- `CLAUDE.md` ou outros adaptadores, quando existirem;
+- `docs/README.md`;
 - `docs/project-overview.md`;
 - `docs/architecture.md`;
 - `docs/domains.md`;
@@ -56,7 +69,31 @@ Documentos normalmente ajustados nessa etapa:
 - `docs/issues.md`;
 - `docs/testing.md`.
 
+Arquivos que podem ser propostos para remocao quando nao fizerem sentido:
+
+- `docs/editor.md`, se o projeto nao tiver conteudo editavel ou CMS;
+- `docs/pdf-export.md`, se o projeto nao gerar documentos imprimiveis;
+- `docs/new-client-workflow.md`, se o projeto nao for replicado por cliente ou instancia;
+- `docs/client-launch-checklist.md`, se nao houver entrega para cliente, area interna ou operador final;
+- qualquer outro documento cuja manutencao gere ruido maior que valor.
+
 Se a IA notar que precisa inventar produto, regra de negocio, entidade ou fluxo sem informacao suficiente, deve registrar a suposicao e pedir decisao humana.
+
+## Limites de Autonomia
+
+A IA pode executar sem nova aprovacao quando a tarefa for mecanica, local e ja estiver coberta pelo escopo aprovado.
+
+A IA deve pedir aprovacao humana antes de:
+
+- alterar escopo;
+- escolher ou trocar arquitetura;
+- criar ou remover modulo relevante;
+- mudar modelo de dados;
+- alterar regras de seguranca;
+- remover documentos do framework;
+- pular fases ou reordenar o plano;
+- adicionar dependencia nova;
+- executar refatoracao ampla.
 
 ## Kickoff de Tarefa
 

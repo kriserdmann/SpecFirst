@@ -4,6 +4,12 @@ Este projeto usa SpecFirst.
 
 Este arquivo e um adaptador operacional para Claude Code. Ele nao substitui nem duplica o contrato do projeto.
 
+## Natureza de Template
+
+Este arquivo e um template de adaptador. No primeiro chat de escopo, revise se Claude Code sera usado neste projeto.
+
+Se nao for usado, solicite aprovacao humana antes de remover este arquivo e limpe suas referencias em `README.md`, `AGENTS.md`, `docs/README.md` e `docs/tooling-adapters.md`.
+
 ## Fonte Canonica
 
 Antes de qualquer implementacao, leia obrigatoriamente:
@@ -29,9 +35,15 @@ Nao implemente codigo antes de adaptar ou validar a documentacao SpecFirst do pr
 Quando receber um escopo novo:
 
 1. leia o contrato em `AGENTS.md`;
-2. adapte os documentos relevantes em `docs/*`;
-3. registre duvidas, riscos e decisoes pendentes;
-4. aguarde aprovacao humana antes de iniciar a implementacao.
+2. revise `AGENTS.md`, `README.md`, este arquivo e todos os documentos em `docs/*`;
+3. proponha ajustes ao projeto real;
+4. solicite aprovacao humana antes de remover qualquer arquivo;
+5. registre duvidas, riscos e decisoes pendentes;
+6. aguarde aprovacao humana antes de iniciar a implementacao.
+
+## Limite de Autonomia
+
+Claude Code pode propor o como tecnico, mas nao deve decidir sozinho o que sera construido, por que sera construido, qual arquitetura sera adotada, quais documentos serao removidos ou quando o escopo deve mudar.
 
 ## Fechamento de Tarefa
 

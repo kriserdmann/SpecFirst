@@ -6,6 +6,10 @@ Este documento explica como conectar o SpecFirst a diferentes agentes e ferramen
 
 SpecFirst usa `AGENTS.md` como contrato universal, mas algumas ferramentas leem arquivos proprios, como `CLAUDE.md`, `.cursorrules`, `.windsurfrules` ou equivalentes. Esses arquivos devem ser tratados como adaptadores operacionais.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise quais ferramentas serao usadas; mantenha apenas adaptadores relevantes e solicite aprovacao humana antes de remover arquivos como `CLAUDE.md`.
+
 ## Principio
 
 `AGENTS.md` e a fonte canonica.

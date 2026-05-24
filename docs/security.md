@@ -4,6 +4,10 @@
 
 Este documento registra controles minimos de seguranca. Ele deve orientar mudancas em autenticacao, autorizacao, uploads, secrets, dados sensiveis e exposicao publica.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise e ajuste modelo de acesso, auth, autorizacao, validacao de input, secrets, dados publicos/privados e logs seguros ao projeto real.
+
 ## Modelo de Acesso
 
 Descreva quem acessa o sistema e com quais papeis.
@@ -35,4 +39,3 @@ Descreva quem acessa o sistema e com quais papeis.
 ## Observabilidade Segura
 
 - Logs devem ajudar investigacao sem registrar senhas, tokens ou payloads sensiveis.
-

@@ -6,6 +6,10 @@ Este documento descreve fluxos operacionais e jornadas de uso. Ele mostra como p
 
 Detalhes tecnicos ficam nos docs especificos. Aqui entra a sequencia operacional.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise e ajuste jornada principal, fluxos, entradas, saidas, riscos e referencias cruzadas ao projeto real.
+
 ## Jornada Principal
 
 ```text
@@ -36,4 +40,3 @@ Riscos:
 - Modelo de dados: `docs/data-model.md`
 - Seguranca: `docs/security.md`
 - Operacao: `docs/operations.md`
-

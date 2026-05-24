@@ -6,6 +6,10 @@ Este documento guarda padroes reutilizaveis do projeto. Podem ser recipes de com
 
 Ele nao deve virar deposito de abstracoes prematuras. Uma recipe existe para explicar um padrao que ja faz sentido repetir.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise e ajuste recipes reutilizaveis, entradas, saidas, regras, variacoes e fora de escopo ao projeto real.
+
 ## O que e uma Recipe
 
 Uma recipe descreve:
@@ -39,4 +43,3 @@ Uma recipe descreve:
 Liste o que este documento nao deve tentar resolver.
 
 - `[ex: nao documentar cada componente trivial]`
-

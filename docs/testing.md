@@ -4,6 +4,10 @@
 
 Este documento define como o projeto prova que continua funcionando. Ele deve listar estrategia, tipos de teste, comandos esperados e o minimo necessario para considerar uma tarefa pronta.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise e ajuste estrategia, tipos de teste, comandos oficiais, regras e Definition of Done ao projeto real.
+
 ## Estrategia
 
 Adote uma estrategia clara, como Red-Green-Refactor para comportamento novo:
@@ -47,4 +51,3 @@ Uma tarefa esta concluida quando:
 - testes relevantes criados ou atualizados;
 - checks aplicaveis executados;
 - docs ajustados quando contrato, schema ou fluxo mudar.
-

@@ -4,6 +4,10 @@
 
 Este documento registra trabalho planejado em formato executavel por humanos e agentes. Ele e util quando o projeto ainda nao tem issue tracker ou quando voce quer manter um plano local canonico.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise e ajuste formato, regras de atualizacao, issues iniciais, status, fases, criterios de aceite e estado atual ao projeto real.
+
 ## Formato Recomendado
 
 ```md
@@ -71,6 +75,8 @@ Criar contrato de trabalho e documentacao canonica inicial.
 
 ### Estado atual
 
+- **2026-05-24 (IA):** [CONCLUIDA] Reequilibrada a autonomia da IA para o modelo humano navegador/IA piloto, exigindo aprovacao humana para decisoes relevantes e remocao de documentos. Todos os arquivos em `docs/*`, alem de `AGENTS.md`, `CLAUDE.md` e `README.md`, agora explicitam sua natureza de template e o que deve ser ajustado ao escopo.
+- **2026-05-22 (IA):** [CONCLUIDA] Reforcada a adaptacao inicial completa do framework no primeiro chat de escopo, incluindo `AGENTS.md`, `README.md`, adaptadores e todos os `docs/*`, com permissao para remover arquivos nao aplicaveis e limpar referencias.
 - **2026-05-20 (IA):** [CONCLUIDA] Criado `docs/design-guidelines.md` e adicionadas referencias em README, AGENTS, indice de docs e workflow de IA para orientar implementacoes de UI.
 - **2026-05-20 (IA):** [CONCLUIDA] Criado `CLAUDE.md` como adaptador operacional e documentada a estrategia de adaptadores em `docs/tooling-adapters.md`, mantendo `AGENTS.md` como fonte canonica.
 - **2026-05-20 (IA):** [CONCLUIDA] Incluido o fluxo Spec-First com IA no README e em `docs/ai-workflow.md`, reforcando que a IA deve adaptar a documentacao ao escopo do projeto antes de criar codigo.

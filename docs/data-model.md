@@ -6,6 +6,10 @@ Este documento descreve os dados do projeto antes que eles virem implementacao e
 
 Use quando alterar banco, schemas, collections, APIs, contratos ou modelos persistidos.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise e ajuste entidades, campos, relacoes, regras, validacoes, migracoes e evolucao ao projeto real.
+
 ## Principios
 
 - Dados devem representar conceitos do dominio, nao atalhos de UI.
@@ -37,4 +41,3 @@ Explique como mudancas de modelo devem ser feitas.
 - Quando atualizar seeds.
 - Quando atualizar tipos gerados.
 - Quando registrar decisao em `docs/decision-log.md`.
-

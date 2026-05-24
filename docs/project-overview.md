@@ -6,6 +6,10 @@ Este documento explica o projeto para alguem que chegou agora. Ele deve responde
 
 Use este arquivo para alinhar produto, engenharia e IA antes de discutir arquitetura.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise e ajuste problema, publico-alvo, objetivo, escopo inicial, fora de escopo e diferenciais ao projeto real.
+
 ## Problema
 
 Descreva a dor concreta.

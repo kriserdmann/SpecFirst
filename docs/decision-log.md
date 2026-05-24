@@ -6,6 +6,10 @@ Este documento registra decisoes que mudam arquitetura, modelo, fluxo, escopo ou
 
 Nao use este arquivo como historico de entregas tecnicas. Para isso, use `docs/deployment-log.md`.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise decisoes iniciais, mantenha apenas as que fizerem sentido para o projeto real e registre novas decisoes quando o humano validar uma escolha duradoura.
+
 ## Como Usar
 
 - Identificador incremental: `0001`, `0002`, `0003`.

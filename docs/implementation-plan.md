@@ -8,6 +8,10 @@ Use para planejar sprints, marcos, dependencias e criterios globais de aceite.
 
 Este documento deve refletir o estado real da implementacao. A IA deve atualiza-lo sempre que concluir uma tarefa que avance fase, checklist ou dependencia critica.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise e ajuste objetivo, escopo da primeira entrega, fases, dependencias, criterios globais de aceite e regras de avanco ao projeto real.
+
 ## Objetivo
 
 Implementar `[NOME_DO_PROJETO]` para `[resultado esperado]`.
@@ -31,6 +35,9 @@ Implementar `[NOME_DO_PROJETO]` para `[resultado esperado]`.
 - [x] Documentar o fluxo Spec-First de adaptar docs ao projeto antes de gerar codigo.
 - [x] Documentar adaptadores de ferramenta e criar `CLAUDE.md`.
 - [x] Criar diretrizes de design para UI e frontend.
+- [x] Documentar adaptacao inicial completa do framework ao escopo do projeto.
+- [x] Reequilibrar autonomia da IA para o modelo humano navegador/IA piloto.
+- [x] Explicitar natureza de template em todos os documentos do framework.
 
 ### Fase 1 - Scaffold tecnico
 

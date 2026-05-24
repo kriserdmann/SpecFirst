@@ -6,6 +6,12 @@ Este arquivo e o contrato universal do projeto para pessoas, agentes de IA e fer
 
 Ele nao substitui a documentacao completa. Ele resume as regras obrigatorias, a arquitetura esperada e o caminho para encontrar contexto nos documentos certos.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, ele deve ser revisado e ajustado ao projeto real.
+
+Adapte especialmente: proposito, regras inviolaveis, stack, estrutura de pastas, fluxo de trabalho, Definition of Done e referencias de documentacao.
+
 ## Proposito do Projeto
 
 - **Nome:** `SpecFirst`
@@ -30,9 +36,12 @@ Regras do SpecFirst:
 
 1. A raiz do repositorio e o template replicavel.
 2. Os arquivos devem permanecer genericos o bastante para serem copiados para novos projetos.
-3. Toda nova rota de documentacao deve ser refletida em `README.md`, `AGENTS.md` e `docs/README.md`.
-4. A IA e responsavel pelo progresso: nenhuma tarefa e considerada concluida sem atualizar o status correspondente em `docs/issues.md`, o checklist ou fase atual em `docs/implementation-plan.md` e o rastro tecnico em `docs/deployment-log.md`.
-5. Arquivos especificos de ferramenta, como `CLAUDE.md`, `.cursorrules` ou similares, sao adaptadores operacionais. Eles nao devem duplicar nem contradizer `AGENTS.md`.
+3. No primeiro chat de escopo de um projeto novo, a IA deve revisar todos os arquivos do framework com o humano e propor ajustes ao projeto real, incluindo `AGENTS.md`, `README.md`, adaptadores de ferramenta e `docs/*`.
+4. Arquivos que nao se aplicam ao projeto podem ser removidos somente apos aprovacao humana explicita, desde que suas referencias sejam limpas de `README.md`, `AGENTS.md`, `docs/README.md` e documentos relacionados.
+5. Toda nova rota de documentacao deve ser refletida em `README.md`, `AGENTS.md` e `docs/README.md`.
+6. A IA e responsavel pelo progresso: nenhuma tarefa e considerada concluida sem atualizar o status correspondente em `docs/issues.md`, o checklist ou fase atual em `docs/implementation-plan.md` e o rastro tecnico em `docs/deployment-log.md`.
+7. Arquivos especificos de ferramenta, como `CLAUDE.md`, `.cursorrules` ou similares, sao adaptadores operacionais. Eles nao devem duplicar nem contradizer `AGENTS.md`.
+8. Toda documentacao pode evoluir quando o escopo ou o projeto mudar, desde que mudancas relevantes sejam propostas pela IA e validadas pelo humano.
 
 ## Stack do Projeto
 
@@ -57,13 +66,14 @@ Explique as tecnologias principais e suas versoes quando isso afetar decisoes.
 Todo trabalho relevante deve seguir este ciclo:
 
 1. Entender objetivo, contexto operacional e criterio de pronto.
-2. Ler `AGENTS.md` e docs relevantes.
-3. Escrever ou ajustar testes quando houver comportamento novo.
-4. Implementar o menor incremento seguro.
-5. Refatorar quando houver duplicacao real ou complexidade desnecessaria.
-6. Validar com os checks definidos em `docs/testing.md`.
-7. Sincronizar progresso em `docs/issues.md`, `docs/implementation-plan.md` e `docs/deployment-log.md`.
-8. Atualizar docs quando arquitetura, modelo ou fluxo mudar.
+2. Em projeto novo, propor a adaptacao do framework inteiro ao escopo e aguardar validacao humana antes de implementar.
+3. Ler `AGENTS.md` e docs relevantes.
+4. Escrever ou ajustar testes quando houver comportamento novo.
+5. Implementar o menor incremento seguro.
+6. Refatorar quando houver duplicacao real ou complexidade desnecessaria.
+7. Validar com os checks definidos em `docs/testing.md`.
+8. Sincronizar progresso em `docs/issues.md`, `docs/implementation-plan.md` e `docs/deployment-log.md`.
+9. Atualizar docs quando arquitetura, modelo ou fluxo mudar.
 
 ## Definition of Done
 
@@ -121,8 +131,9 @@ Ler sempre antes de implementacoes relevantes:
 
 ## Diretrizes de Uso de IA
 
-A IA atua como piloto de implementacao.
-O humano atua como navegador de decisao.
+O humano atua como navegador: define o que sera feito, por que sera feito, prioridades, contexto de negocio e decisoes de arquitetura, produto e escopo.
+
+A IA atua como piloto: propoe caminhos tecnicos, escreve codigo, gera testes, lida com boilerplate, executa refatoracoes mecanicas e mantem a documentacao sincronizada.
 
 Nunca:
 
@@ -130,12 +141,16 @@ Nunca:
 - criar arquitetura complexa sem necessidade comprovada;
 - esconder tradeoffs ou riscos;
 - deixar regras importantes apenas na memoria da ferramenta.
+- decidir sozinha mudancas de escopo, arquitetura, produto, modelo de dados, seguranca ou remocao de documentos.
+- remover arquivos do framework sem aprovacao humana explicita.
 
 Sempre:
 
 - simplificar solucoes;
 - manter entregas pequenas;
 - preferir contratos claros;
+- pedir decisao humana quando houver mais de um caminho relevante;
+- apresentar plano curto antes de executar trabalho amplo;
 - validar antes de concluir;
 - sincronizar issue, plano e log tecnico antes de encerrar uma tarefa;
 - atualizar docs quando a decisao mudar.

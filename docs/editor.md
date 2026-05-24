@@ -6,6 +6,10 @@ Use este documento quando o projeto tiver conteudo editavel por usuarios nao tec
 
 Ele define o que pode ser editado e o que deve continuar em codigo.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise se o projeto tera conteudo editavel, CMS ou editor; ajuste decisao padrao, regras, blocos e evolucao, ou solicite aprovacao humana para remover.
+
 ## Decisao Padrao
 
 Descreva a ferramenta ou estrategia editorial.
@@ -32,4 +36,3 @@ Novos campos ou blocos podem ser adicionados quando:
 - houver necessidade recorrente;
 - o contrato for claro;
 - houver validacao ou teste quando aplicavel.
-

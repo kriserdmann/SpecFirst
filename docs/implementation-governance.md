@@ -4,6 +4,10 @@
 
 Este documento define como controlar escopo durante a implementacao. Ele ajuda a evitar que uma tarefa pequena vire reescrita ampla.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise e ajuste regras de governanca, limites de autonomia, travamento de escopo, avanco de fase e criterios para pausar e decidir ao projeto real.
+
 ## Regras de Governanca
 
 - Implementar o menor incremento seguro.
@@ -13,6 +17,22 @@ Este documento define como controlar escopo durante a implementacao. Ele ajuda a
 - Separar bugfix, refatoracao e feature quando possivel.
 - Manter `docs/issues.md`, `docs/implementation-plan.md` e `docs/deployment-log.md` sincronizados.
 
+## Adaptacao Inicial do Framework
+
+No primeiro chat de escopo de um projeto novo, a IA deve tratar o SpecFirst como material bruto a ser adaptado, nao como estrutura imutavel.
+
+A IA deve:
+
+- revisar `AGENTS.md`, `README.md`, adaptadores de ferramenta e todos os arquivos em `docs/*`;
+- preencher o que for essencial ao projeto;
+- propor ao humano quais arquivos nao se aplicam;
+- remover arquivos somente apos aprovacao humana explicita;
+- limpar referencias para arquivos removidos quando a remocao for aprovada;
+- registrar no chat quais documentos foram mantidos, alterados, propostos para remocao ou removidos;
+- aguardar aprovacao humana antes de iniciar codigo.
+
+Remover arquivo documental nao e quebra de governanca quando a remocao reduz ruido e mantem o contexto mais preciso.
+
 ## Travamento de Escopo
 
 A IA nao tem autorizacao para:
@@ -21,6 +41,8 @@ A IA nao tem autorizacao para:
 - pular para a proxima fase se a fase atual tiver checklists obrigatorios abertos;
 - expandir o escopo para uma feature nao planejada;
 - transformar uma correcao pequena em refatoracao ampla sem aprovacao humana.
+- remover documento do framework sem aprovacao humana;
+- tomar decisao de arquitetura, produto, seguranca ou modelo de dados sem validacao humana.
 
 Se a IA identificar que precisa mudar o rumo, deve pausar e pedir decisao humana antes de implementar.
 

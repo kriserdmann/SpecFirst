@@ -4,6 +4,10 @@
 
 Este documento explica como rodar, configurar, manter e publicar o projeto. Ele deve permitir que alguem opere o sistema sem depender de memoria oral.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise e ajuste ambiente local, variaveis, URLs, seeds, backup, checks e checklist de deploy ao projeto real.
+
 ## Ambiente Local
 
 1. Instalar runtime: `[Node, Python, Docker, etc.]`
@@ -52,4 +56,3 @@ Explique o que precisa ser copiado para restaurar o projeto.
 - `[item de deploy]`
 - `[item de seguranca]`
 - `[item de verificacao]`
-

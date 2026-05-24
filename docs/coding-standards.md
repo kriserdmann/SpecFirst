@@ -4,6 +4,10 @@
 
 Este documento transforma preferencia tecnica em padrao explicito. Ele deve reduzir discussoes repetidas e orientar agentes a escrever codigo consistente com o projeto.
 
+## Natureza de Template
+
+Este arquivo e um template. No primeiro chat de escopo, revise e ajuste linguagem, framework, organizacao, validacao, reutilizacao, comentarios e checklist de PR ao projeto real.
+
 ## Linguagem e Tipagem
 
 Defina regras da linguagem principal.
@@ -51,4 +55,3 @@ Defina como entradas externas devem ser validadas.
 - Sem duplicacao evidente.
 - Testes e checks relevantes executados.
 - Docs atualizados quando necessario.
-

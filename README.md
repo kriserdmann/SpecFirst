@@ -6,6 +6,12 @@ A proposta é simples: antes de escrever muito código, o projeto deve ter uma f
 
 O próprio repositório do SpecFirst funciona como template. Para usar em outro projeto, copie `AGENTS.md` e a pasta `docs`.
 
+## Natureza de Template
+
+Este README também é parte do template. Ao aplicar o SpecFirst em um projeto real, revise este guia para refletir o nome, o propósito, o fluxo, os documentos mantidos e os adaptadores usados naquele projeto.
+
+Remova ou ajuste seções que não se aplicam, mas peça validação humana antes de excluir arquivos Markdown do framework.
+
 ## O que é o SpecFirst
 
 SpecFirst pode ser entendido em três camadas complementares:
@@ -90,14 +96,22 @@ Ele funciona bem para produtos, apps internos, sites, bibliotecas, APIs, automa�
 
 A ideia central do SpecFirst é usar a IA primeiro para estruturar o projeto, não para sair programando.
 
+A dinâmica correta é:
+
+- **Humano como navegador:** define o que será feito, por que será feito, contexto de negócio, prioridades e decisões de produto, arquitetura e escopo.
+- **IA como piloto:** propõe o como técnico, escreve código, gera testes, lida com boilerplate, executa refatorações mecânicas e mantém documentação sincronizada.
+
+A IA não deve operar como dona do produto. Quando houver decisão relevante, ela deve propor opções, explicar tradeoffs e pedir validação humana.
+
 Em vez de começar com um pedido como "crie um app de tarefas", o fluxo recomendado é:
 
 1. **Start técnico:** crie um repositório vazio e copie `AGENTS.md` e `docs`.
 2. **Contextualização:** descreva a ideia do produto para a IA e peça para ela ler `AGENTS.md`.
-3. **Adaptação do SpecFirst:** peça para a IA ajustar `docs/project-overview.md`, `docs/architecture.md`, `docs/data-model.md`, `docs/workflows.md`, `docs/implementation-plan.md` e `docs/issues.md` para o projeto real.
+3. **Adaptação completa do SpecFirst:** peça para a IA revisar todos os arquivos do framework, incluindo `AGENTS.md`, `README.md`, adaptadores de ferramenta e `docs/*`.
 4. **Sem código ainda:** a IA deve mapear escopo, entidades, regras, riscos, fases e critérios de aceite antes de criar arquivos de implementação.
-5. **Revisão de intenção:** você revisa os Markdown gerados. Se a IA extrapolou o escopo, entendeu uma entidade errado ou pulou uma regra importante, corrija no texto.
-6. **Green light:** só depois da documentação aprovada, peça para a IA implementar a primeira fase seguindo `AGENTS.md`, `docs/implementation-plan.md` e `docs/testing.md`.
+5. **Poda assistida do template:** arquivos que não fazem sentido para o projeto podem ser propostos para remoção, mas a IA deve pedir aprovação humana antes de excluir qualquer Markdown.
+6. **Revisão de intenção:** você revisa os Markdown gerados. Se a IA extrapolou o escopo, entendeu uma entidade errado ou pulou uma regra importante, corrija no texto.
+7. **Green light:** só depois da documentação aprovada, peça para a IA implementar a primeira fase seguindo `AGENTS.md`, `docs/implementation-plan.md` e `docs/testing.md`.
 
 Esse fluxo transforma a IA de geradora de código em parceira de produto e arquitetura. Ela ajuda a criar a própria forma onde o código será injetado depois.
 
@@ -130,12 +144,14 @@ Você é um agente trabalhando sob o framework SpecFirst.
 Antes de implementar qualquer coisa:
 
 1. Leia `AGENTS.md`.
-2. Leia os documentos nucleares em `docs/README.md`, `docs/project-overview.md`, `docs/architecture.md`, `docs/ai-workflow.md`, `docs/coding-standards.md` e `docs/testing.md`.
-3. A partir do escopo descrito pelo humano, adapte os documentos `docs/*` para este projeto específico.
-4. Preencha ou revise `docs/project-overview.md`, `docs/architecture.md`, `docs/data-model.md`, `docs/workflows.md`, `docs/implementation-plan.md` e `docs/issues.md`.
-5. Não crie código ainda.
-6. Confirme objetivo, critério de aceite, riscos, arquivos prováveis, checks necessários e pontos que precisam de decisão humana.
-7. Aguarde aprovação humana do escopo documentado antes de implementar.
+2. Leia `README.md`, `docs/README.md` e todos os arquivos em `docs/*`.
+3. A partir do escopo descrito pelo humano, adapte o framework inteiro para este projeto específico, incluindo `AGENTS.md`.
+4. Preencha, revise ou proponha a remoção de documentos conforme aderência ao projeto.
+5. Antes de remover qualquer arquivo Markdown, liste o motivo e peça aprovação humana explícita.
+6. Se a remoção for aprovada, limpe todas as referências cruzadas em `README.md`, `AGENTS.md`, `docs/README.md` e documentos relacionados.
+7. Não crie código ainda.
+8. Confirme objetivo, critério de aceite, riscos, arquivos prováveis, checks necessários, documentos propostos para remoção e pontos que precisam de decisão humana.
+9. Aguarde aprovação humana do escopo documentado antes de implementar.
 
 Ao concluir:
 
@@ -261,6 +277,8 @@ Um adaptador deve ser curto e dizer para a ferramenta ler `AGENTS.md` e os docs 
 `docs` é a documentação canônica. Ela deve ser viva, objetiva e útil para decisões futuras. Cada arquivo deve existir por um motivo claro.
 
 O princípio central é: documentar o suficiente para orientar boas decisões, sem criar burocracia que atrapalhe a entrega.
+
+Todos os arquivos do SpecFirst são templates vivos. Eles devem ser ajustados quando o escopo muda, quando o projeto evolui ou quando uma decisão aprovada altera produto, arquitetura, operação, segurança, design ou fluxo de trabalho.
 
 ## Filosofia
 
