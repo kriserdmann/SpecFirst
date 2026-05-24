@@ -41,6 +41,24 @@ Uma entrega pode aparecer no Deployment Log sem gerar decisao arquitetural. Uma 
 
 ## Entradas
 
+## [2026-05-24] - Entrega: ISSUE-001 (Kickoff visual obrigatorio)
+
+- **Fase:** Fase 0 - Fundacao documental
+- **O que foi feito:** Adicionada regra para projetos com UI: quando `docs/design-guidelines.md` ainda estiver generico e o humano nao fornecer preferencias visuais, a IA deve perguntar sobre marca, referencias, estilo, densidade, publico, acessibilidade e restricoes antes de implementar telas, componentes ou estilos.
+- **Arquivos modificados:** `README.md`, `docs/design-guidelines.md`, `docs/ai-workflow.md`, `docs/implementation-governance.md`, `docs/deployment-log.md`, `docs/issues.md`, `docs/implementation-plan.md`
+- **Resultados dos testes:** Revisao documental por leitura e busca textual. Nao ha suite automatizada neste repositorio documental.
+- **Docs atualizados:** `README.md`, `docs/design-guidelines.md`, `docs/ai-workflow.md`, `docs/implementation-governance.md`, `docs/deployment-log.md`, `docs/issues.md`, `docs/implementation-plan.md`
+- **Riscos/Debito tecnico:** Nenhum conhecido.
+
+## [2026-05-24] - Entrega: ISSUE-001 (Baseline de design guidelines)
+
+- **Fase:** Fase 0 - Fundacao documental
+- **O que foi feito:** Evoluido `docs/design-guidelines.md` de um esqueleto para um template prescritivo com baseline de cores, tipografia, espacamento, layout, elevacao, shapes, componentes, conteudo visual, estados e acessibilidade. O objetivo e garantir consistencia minima de design mesmo antes de existir uma marca ou design system especifico.
+- **Arquivos modificados:** `docs/design-guidelines.md`, `docs/deployment-log.md`, `docs/issues.md`, `docs/implementation-plan.md`
+- **Resultados dos testes:** Revisao documental por leitura. Nao ha suite automatizada neste repositorio documental.
+- **Docs atualizados:** `docs/design-guidelines.md`, `docs/deployment-log.md`, `docs/issues.md`, `docs/implementation-plan.md`
+- **Riscos/Debito tecnico:** O baseline usa tokens genericos e deve ser substituido por tokens reais quando o projeto tiver marca, identidade visual ou design system definido.
+
 ## [2026-05-24] - Entrega: ISSUE-001 (Governanca humano-navegador)
 
 - **Fase:** Fase 0 - Fundacao documental

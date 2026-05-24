@@ -90,6 +90,7 @@ A IA deve pedir aprovacao humana antes de:
 - criar ou remover modulo relevante;
 - mudar modelo de dados;
 - alterar regras de seguranca;
+- definir direcao visual de projeto com UI quando `docs/design-guidelines.md` nao estiver preenchido com preferencias humanas;
 - remover documentos do framework;
 - pular fases ou reordenar o plano;
 - adicionar dependencia nova;

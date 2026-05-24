@@ -110,8 +110,9 @@ Em vez de começar com um pedido como "crie um app de tarefas", o fluxo recomend
 3. **Adaptação completa do SpecFirst:** peça para a IA revisar todos os arquivos do framework, incluindo `AGENTS.md`, `README.md`, adaptadores de ferramenta e `docs/*`.
 4. **Sem código ainda:** a IA deve mapear escopo, entidades, regras, riscos, fases e critérios de aceite antes de criar arquivos de implementação.
 5. **Poda assistida do template:** arquivos que não fazem sentido para o projeto podem ser propostos para remoção, mas a IA deve pedir aprovação humana antes de excluir qualquer Markdown.
-6. **Revisão de intenção:** você revisa os Markdown gerados. Se a IA extrapolou o escopo, entendeu uma entidade errado ou pulou uma regra importante, corrija no texto.
-7. **Green light:** só depois da documentação aprovada, peça para a IA implementar a primeira fase seguindo `AGENTS.md`, `docs/implementation-plan.md` e `docs/testing.md`.
+6. **Kickoff visual, se houver UI:** se você não passou preferências de design, a IA deve perguntar sobre marca, referências, estilo, densidade, público, acessibilidade e restrições antes de criar telas.
+7. **Revisão de intenção:** você revisa os Markdown gerados. Se a IA extrapolou o escopo, entendeu uma entidade errado ou pulou uma regra importante, corrija no texto.
+8. **Green light:** só depois da documentação aprovada, peça para a IA implementar a primeira fase seguindo `AGENTS.md`, `docs/implementation-plan.md` e `docs/testing.md`.
 
 Esse fluxo transforma a IA de geradora de código em parceira de produto e arquitetura. Ela ajuda a criar a própria forma onde o código será injetado depois.
 
@@ -150,8 +151,9 @@ Antes de implementar qualquer coisa:
 5. Antes de remover qualquer arquivo Markdown, liste o motivo e peça aprovação humana explícita.
 6. Se a remoção for aprovada, limpe todas as referências cruzadas em `README.md`, `AGENTS.md`, `docs/README.md` e documentos relacionados.
 7. Não crie código ainda.
-8. Confirme objetivo, critério de aceite, riscos, arquivos prováveis, checks necessários, documentos propostos para remoção e pontos que precisam de decisão humana.
-9. Aguarde aprovação humana do escopo documentado antes de implementar.
+8. Se o projeto tiver UI e nenhuma preferência visual tiver sido informada, pergunte sobre marca, referências, estilo visual, densidade da interface, público, acessibilidade e restrições.
+9. Confirme objetivo, critério de aceite, riscos, arquivos prováveis, checks necessários, documentos propostos para remoção e pontos que precisam de decisão humana.
+10. Aguarde aprovação humana do escopo documentado antes de implementar.
 
 Ao concluir:
 

@@ -38,6 +38,8 @@ Implementar `[NOME_DO_PROJETO]` para `[resultado esperado]`.
 - [x] Documentar adaptacao inicial completa do framework ao escopo do projeto.
 - [x] Reequilibrar autonomia da IA para o modelo humano navegador/IA piloto.
 - [x] Explicitar natureza de template em todos os documentos do framework.
+- [x] Evoluir diretrizes de design com baseline de tokens, layout e componentes.
+- [x] Exigir kickoff visual quando houver UI sem preferencias humanas definidas.
 
 ### Fase 1 - Scaffold tecnico
 

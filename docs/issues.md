@@ -75,6 +75,8 @@ Criar contrato de trabalho e documentacao canonica inicial.
 
 ### Estado atual
 
+- **2026-05-24 (IA):** [CONCLUIDA] Adicionada regra de kickoff visual: se o projeto tiver UI e o humano nao passar preferencias de design, a IA deve perguntar antes de implementar telas, componentes ou estilos.
+- **2026-05-24 (IA):** [CONCLUIDA] Evoluido `docs/design-guidelines.md` para incluir baseline prescritivo de cores, tipografia, espacamento, layout, componentes, estados e acessibilidade, reduzindo improviso visual da IA em projetos com UI.
 - **2026-05-24 (IA):** [CONCLUIDA] Reequilibrada a autonomia da IA para o modelo humano navegador/IA piloto, exigindo aprovacao humana para decisoes relevantes e remocao de documentos. Todos os arquivos em `docs/*`, alem de `AGENTS.md`, `CLAUDE.md` e `README.md`, agora explicitam sua natureza de template e o que deve ser ajustado ao escopo.
 - **2026-05-22 (IA):** [CONCLUIDA] Reforcada a adaptacao inicial completa do framework no primeiro chat de escopo, incluindo `AGENTS.md`, `README.md`, adaptadores e todos os `docs/*`, com permissao para remover arquivos nao aplicaveis e limpar referencias.
 - **2026-05-20 (IA):** [CONCLUIDA] Criado `docs/design-guidelines.md` e adicionadas referencias em README, AGENTS, indice de docs e workflow de IA para orientar implementacoes de UI.

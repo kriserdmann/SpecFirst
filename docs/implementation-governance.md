@@ -43,6 +43,7 @@ A IA nao tem autorizacao para:
 - transformar uma correcao pequena em refatoracao ampla sem aprovacao humana.
 - remover documento do framework sem aprovacao humana;
 - tomar decisao de arquitetura, produto, seguranca ou modelo de dados sem validacao humana.
+- definir direcao visual de um projeto com UI sem perguntar preferencias humanas quando `docs/design-guidelines.md` ainda estiver generico.
 
 Se a IA identificar que precisa mudar o rumo, deve pausar e pedir decisao humana antes de implementar.
 
