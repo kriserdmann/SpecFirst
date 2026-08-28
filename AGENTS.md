@@ -34,14 +34,12 @@ Exemplos:
 
 Regras do SpecFirst:
 
-1. A raiz do repositorio e o template replicavel.
-2. Os arquivos devem permanecer genericos o bastante para serem copiados para novos projetos.
-3. No primeiro chat de escopo de um projeto novo, a IA deve revisar todos os arquivos do framework com o humano e propor ajustes ao projeto real, incluindo `AGENTS.md`, `README.md`, adaptadores de ferramenta e `docs/*`.
-4. Arquivos que nao se aplicam ao projeto podem ser removidos somente apos aprovacao humana explicita, desde que suas referencias sejam limpas de `README.md`, `AGENTS.md`, `docs/README.md` e documentos relacionados.
-5. Toda nova rota de documentacao deve ser refletida em `README.md`, `AGENTS.md` e `docs/README.md`.
-6. A IA e responsavel pelo progresso: nenhuma tarefa e considerada concluida sem atualizar o status correspondente em `docs/issues.md`, o checklist ou fase atual em `docs/implementation-plan.md` e o rastro tecnico em `docs/deployment-log.md`.
-7. Arquivos especificos de ferramenta, como `CLAUDE.md`, `.cursorrules` ou similares, sao adaptadores operacionais. Eles nao devem duplicar nem contradizer `AGENTS.md`.
-8. Toda documentacao pode evoluir quando o escopo ou o projeto mudar, desde que mudancas relevantes sejam propostas pela IA e validadas pelo humano.
+1. No primeiro chat de escopo de um projeto novo, a IA deve revisar todos os arquivos do framework com o humano e propor ajustes ao projeto real, incluindo `AGENTS.md`, `README.md`, adaptadores de ferramenta e `docs/*`.
+2. Arquivos que nao se aplicam ao projeto podem ser removidos somente apos aprovacao humana explicita, desde que suas referencias sejam limpas de `README.md`, `AGENTS.md`, `docs/README.md` e documentos relacionados.
+3. Toda nova rota de documentacao deve ser refletida em `README.md`, `AGENTS.md` e `docs/README.md`.
+4. A IA e responsavel pelo progresso: nenhuma tarefa e considerada concluida sem atualizar o status correspondente em `docs/issues.md`, o checklist ou fase atual em `docs/implementation-plan.md` e o rastro tecnico em `docs/deployment-log.md`.
+5. Arquivos especificos de ferramenta, como `CLAUDE.md`, `.cursorrules` ou similares, sao adaptadores operacionais. Eles nao devem duplicar nem contradizer `AGENTS.md`.
+6. Toda documentacao pode evoluir quando o escopo ou o projeto mudar, desde que mudancas relevantes sejam propostas pela IA e validadas pelo humano.
 
 ## Stack do Projeto
 
